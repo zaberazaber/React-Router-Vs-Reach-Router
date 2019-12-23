@@ -4,6 +4,7 @@ import Home from './homeComponent';
 import Dashboard from './dashboardComonent';
 import {  Router } from "@reach/router";
 import Navbar from "./navComponent";
+import Users from './userComponent';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Router>
        <Home path="home" />
        <Dashboard path="/dashboard"/>
+       <Users path="/users/:userId" />
        </Router>
       </header>
     </div>
