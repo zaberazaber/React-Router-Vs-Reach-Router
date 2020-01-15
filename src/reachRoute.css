@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.navDrop{
+  color: #007bff !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: red !important;
+}
