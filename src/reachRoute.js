@@ -4,6 +4,7 @@ import Home from './homeComponent';
 import Dashboard from './dashboardComonent';
 import Navbar from "./navComponent";
 import Users from './userComponent';
+import Invoice from './invoice';
 import { Router } from "@reach/router";
 // import { BrowserRouter as Router } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ function ReachApp() {
           <Home path="home" />
           <Dashboard path="/dashboard" />
           <Users path="/users/:userId" />
+          <Invoice path="/dashboard/invoices/:invoiceId" />
         </Router>
       </header>
     </div>
