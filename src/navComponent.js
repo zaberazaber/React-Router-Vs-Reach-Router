@@ -7,7 +7,7 @@ import './reachRoute.css';
 const Navigation = () => {
     return <div>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
-    <Navbar.Brand href="#home">React-Routing</Navbar.Brand>
+    <Navbar.Brand href="/">React/Reach-Routing</Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="mr-auto">
@@ -19,17 +19,10 @@ const Navigation = () => {
             <Nav.Link className = "navdrop" href="/users/ID234">USER-2</Nav.Link>
             <Nav.Link className = "navdrop" href="/users/ID345">USER-3</Nav.Link>
           </ul>
-          {/* <NavDropdown.Divider />
-          <NavDropdown title="Nested-Routes" id="collasible-nav-dropdown">Nested-Routes</NavDropdown>
-          <NavDropdown.Item href="#action/3.4">USER-1</NavDropdown.Item> */}
-
         </NavDropdown>
       </Nav>
       <Nav>
-        <Nav.Link href="#deets">More deets</Nav.Link>
-        <Nav.Link eventKey={2} href="#memes">
-          Dank memes
-        </Nav.Link>
+        <Nav.Link href="/blog/paramValue">useParams</Nav.Link>
       </Nav>
     </Navbar.Collapse>
   </Navbar>

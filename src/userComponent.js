@@ -5,8 +5,8 @@ import React from 'react';
 const Users = (props) => {
     console.log(props)
     return <div>
-                <h1>Welcome To Users !</h1>
-                <h2>{props.userId}</h2>
+                <h1>Welcome To Reach Users !</h1>
+                <h3>ID: {props.userId}</h3>
             </div>
 }
 //------------------- ❌  🅁🄴🄰🄲🄷   ❌   -------------------//
@@ -17,6 +17,7 @@ const Users = (props) => {
 //   render(){
 //     return (
 //       <div>
+//         <h1>Welcome To React Users !</h1>
 //         <h3>ID: {this.props.match.params.userId}</h3>
 //       </div>
 //     );

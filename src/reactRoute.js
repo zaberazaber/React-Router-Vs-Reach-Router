@@ -5,7 +5,8 @@ import Dashboard from './dashboardComonent';
 import Navbar from "./navComponent";
 import Users from './userComponent';
 // import {  Router } from "@reach/router";
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import Fusion from './useParams'
 
 
 
@@ -36,10 +37,31 @@ function ReactApp() {
                     {/* ------------------- ⭕ 【ＲＥＡＣＴ】 ⭕   ------------------- */}
 
                     <Switch>
-                     <Route path="/users/:userId" component= { Users } />
+                        <Route path="/users/:userId" component={Users} />
+                    </Switch>
+
+                    {/* <Switch> */}
+                        {/* Using the `component` prop */}
+                        {/* <Route path="/blog/:paramValue" component={Fusion} /> */}
+
+                        {/* Using the `render` prop */}
+                        {/* <Route
+                            path="/posts/:paramValue"
+                            render={({ match }) => <Fusion match={match} />}
+                        />
+                    </Switch> */}
+                    
+                    {/* when using props useParams */}
+                    <Switch>
+                        <Route path="/posts/:paramValue">
+                            <Fusion />
+                        </Route>
                     </Switch>
 
                     {/* ------------------- ⭕ 【ＲＥＡＣＴ】 ⭕   ------------------- */}
+
+
+
 
                 </Router>
             </header>
